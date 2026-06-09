@@ -3,8 +3,12 @@
   "name": "com.minddory/brain",
   "title": "MindDory Brain",
   "description": "Turn AI chats into vocabulary: capture words and grammar into spaced-repetition flashcards.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "websiteUrl": "https://minddory.com",
+  "repository": {
+    "url": "https://github.com/Hyneq00/minddory-mcp",
+    "source": "github"
+  },
   "remotes": [
     {
       "type": "streamable-http",
