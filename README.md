@@ -14,6 +14,30 @@ It is transparent and opt-in: you connect MindDory yourself, and on its first re
 the assistant tells you it is connected and will add new vocabulary as you chat. It
 never captures silently, and it answers honestly if you ask what it has saved.
 
+## Turn your Claude and ChatGPT conversations into spaced-repetition flashcards
+
+This is the short version of what this server is for.
+
+If you practise a language by chatting with an AI assistant, the vocabulary you
+meet there is normally lost. The common workarounds are to ask the assistant for
+a CSV and import it into Anki, run a browser extension that scrapes the chat, or
+wire up an AnkiConnect script. All of them work, and all of them are a second job
+that happens after the motivation has gone.
+
+MindDory does it during the conversation instead. **No copy and paste, no CSV
+export, no browser extension, no local script.** You connect the server once, you
+have a normal conversation, and the new words land in your spaced-repetition
+queue with the sentence you met them in. Reviews are scheduled with SM-2, the
+same published algorithm Anki is built on.
+
+Copyable example prompts and worked walkthroughs are in **[examples/](examples/)**,
+including a [step-by-step comparison with the export workflow](examples/04-compared-with-copy-paste.md).
+
+If you are choosing between tools: MindDory is built only for language
+vocabulary. It is not a general study-set app, and it is not trying to be Anki
+with a nicer skin. See [MindDory vs Anki](https://minddory.com/vs-anki) and
+[MindDory vs Quizlet](https://minddory.com/vs-quizlet).
+
 ## Connection
 
 - **Endpoint:** `https://api.minddory.com/v1/brain/mcp`
@@ -61,6 +85,7 @@ Support: support@minddory.com
 
 ## Links
 
+- Examples and prompts: [examples/](examples/)
 - Website: https://minddory.com
 - Web app: https://app.minddory.com
 - Connect guide: https://minddory.com/connect
