@@ -27,8 +27,8 @@ that happens after the motivation has gone.
 MindDory does it during the conversation instead. **No copy and paste, no CSV
 export, no browser extension, no local script.** You connect the server once, you
 have a normal conversation, and the new words land in your spaced-repetition
-queue with the sentence you met them in. Reviews are scheduled with SM-2, the
-same published algorithm Anki is built on.
+queue with the sentence you met them in. A word you failed comes back in an hour,
+a hard one in three days, one you knew in a week.
 
 Copyable example prompts and worked walkthroughs are in **[examples/](examples/)**,
 including a [step-by-step comparison with the export workflow](examples/04-compared-with-copy-paste.md).
@@ -63,14 +63,14 @@ then complete the magic-link sign-in. Setup guide: https://minddory.com/connect
 | `get_recent_activity` | read | Recent interaction log |
 | `capture_word` | write | Save a new word/phrase from chat into the deck |
 | `capture_grammar_mistake` | write | Log a grammar mistake into the Grammar Patterns view |
-| `mark_demonstrated` | write | Reinforce a word used correctly (SM-2 boost) |
-| `mark_struggled` | write | Down-weight a word the user got wrong (SM-2) |
+| `mark_demonstrated` | write | Reinforce a word used correctly (pushes its next review out) |
+| `mark_struggled` | write | Down-weight a word the user got wrong (brings its next review forward) |
 | `log_interaction` | write | Append a lookup / discussion / read-in-context signal |
 
 Read tools are annotated `readOnlyHint`; write tools mutate only the user's own
 deck and are additive (`destructiveHint: false`).
 
-Built on the proven SM-2 spaced-repetition algorithm. Free to connect; advanced
+Built on spaced repetition with difficulty-based intervals. Free to connect; advanced
 spaced-repetition writes are part of MindDory Premium.
 
 ## Troubleshooting

@@ -20,7 +20,7 @@ job, and the second job is the part people quit.
 | After the conversation | Ask for CSV, check the formatting, download, import, fix fields | Nothing to do |
 | Deduplication | You reimport words you already know | Checks `get_known_words` first |
 | Context | Usually lost, you get word and translation | Captured with the sentence it appeared in |
-| Review scheduling | Starts when you get around to importing | Starts immediately, on SM-2 |
+| Review scheduling | Starts when you get around to importing | Starts immediately |
 | When you skip a day | The backlog grows and the import gets bigger | There is no backlog to import |
 
 ## The honest limits

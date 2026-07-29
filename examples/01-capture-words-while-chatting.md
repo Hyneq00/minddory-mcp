@@ -24,7 +24,7 @@ Tell me what you captured at the end.
 2. You chat. When a word appears that is outside your known set, the assistant
    calls `capture_word` with the word, its context, and the language code.
 3. Captured words land in the **Chat Discoveries** folder in the MindDory apps
-   and enter the SM-2 schedule immediately.
+   and enter the review schedule immediately.
 4. If you use a word correctly during the conversation, the assistant can call
    `mark_demonstrated`, which nudges that card forward instead of drilling you on
    something you have clearly got.

@@ -18,7 +18,7 @@ translation. Do not show me the answer until I have guessed.
 2. It quizzes you conversationally: a sentence with the word missing, a
    definition to name, or a situation where you would need the word.
 3. When you get one right it calls `mark_demonstrated`; when you get one wrong it
-   calls `mark_struggled`. Both feed the same SM-2 schedule the apps use, so the
+   calls `mark_struggled`. Both feed the same review schedule the apps use, so the
    review counts. You are not doing a shadow session that gets thrown away.
 
 ## Useful follow-ups
