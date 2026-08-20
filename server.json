@@ -2,8 +2,8 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "com.minddory/brain",
   "title": "MindDory Brain",
-  "description": "Turn AI chats into vocabulary: capture words and grammar into spaced-repetition flashcards.",
-  "version": "1.0.1",
+  "description": "Free: turn your AI chats into spaced-repetition vocabulary. 13 tools, reads and writes.",
+  "version": "1.0.2",
   "websiteUrl": "https://minddory.com",
   "repository": {
     "url": "https://github.com/Hyneq00/minddory-mcp",
