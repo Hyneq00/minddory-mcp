@@ -71,14 +71,14 @@ then complete the magic-link sign-in. Setup guide: https://minddory.com/connect
 Read tools are annotated `readOnlyHint`; write tools mutate only the user's own
 deck and are additive (`destructiveHint: false`).
 
-Built on spaced repetition with difficulty-based intervals. Free to connect, and
-free to build a deck from chat; the two tools that reschedule a card
-(`mark_demonstrated`, `mark_struggled`) are part of MindDory Premium.
+Built on spaced repetition with difficulty-based intervals. Free to connect and
+free to use: every tool, including the two that reschedule a card. MindDory
+Premium buys the in-app AI features, not this.
 
 ## Troubleshooting
 
 - **No sign-in email / can't authorize.** Connecting sends a one-time magic link to your MindDory account email. Check spam, and use the same email as your MindDory account. Links expire after a short window; reconnect to get a fresh one.
-- **"This tool requires an active MindDory Premium subscription" (HTTP 402).** Two tools require MindDory Premium: `mark_demonstrated` and `mark_struggled`, the ones that move a card in the spaced-repetition schedule. Everything else, including `capture_word` and `capture_grammar_mistake`, works on the free tier. Upgrade in the app or at https://app.minddory.com.
+- **"This tool requires an active MindDory Premium subscription" (HTTP 402).** No tool returns this any more. Every MCP tool is free as of 2026-08-20, including the two that move a card in the spaced-repetition schedule. If you still see a 402, your client is caching an old tool list: disconnect and reconnect the connector.
 - **Tools don't appear after connecting.** MCP clients cache the tool list; disconnect and reconnect the connector to refresh it.
 - **Captured words aren't in the app.** New words sync to the "Chat Discoveries" folder. Re-open or pull-to-refresh the app, and confirm you're signed into the same account.
 - **Wrong language captured.** Capture is scoped to a language code; if a word lands under the wrong language, tell the assistant the correct language and it will recapture.
