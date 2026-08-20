@@ -56,4 +56,4 @@ What have you captured so far today, and why those words?
 
 It does not capture silently, it does not capture words you already know (it
 checks `get_known_words` first), and it does not touch anything outside your own
-deck. Write tools require MindDory Premium; read tools work on the free tier.
+deck. Every tool is free, write tools included; read tools work on the free tier.

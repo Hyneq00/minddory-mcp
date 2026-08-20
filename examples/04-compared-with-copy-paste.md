@@ -25,9 +25,8 @@ job, and the second job is the part people quit.
 
 ## The honest limits
 
-- The write tools require MindDory Premium. Read tools work on the free tier, so
-  you can connect and query your deck without paying, but automatic capture is a
-  paid feature.
+- It needs a MindDory account, and your deck lives there. Every tool is free
+  since 2026-08-20, capture included, so there is nothing to pay for here.
 - It captures into MindDory, not into Anki. If you want your cards to live in
   Anki specifically, the export workflow is still your answer.
 - It needs an MCP-compatible client. That covers Claude and Cursor today, and the
