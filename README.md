@@ -59,6 +59,7 @@ then complete the magic-link sign-in. Setup guide: https://minddory.com/connect
 | `get_queue` | read | Cards due now and within 24 hours |
 | `get_known_words` | read | Words verified known via flashcard practice |
 | `get_active_vocab` | read | Most frequently encountered words (frontier vocabulary) |
+| `check_words` | read | Batch check: which of these words are already in the deck, and how well are they known |
 | `get_card` | read | Single card detail (translation, mastery, recent events) |
 | `get_recent_activity` | read | Recent interaction log |
 | `capture_word` | write | Save a new word/phrase from chat into the deck |
@@ -70,13 +71,14 @@ then complete the magic-link sign-in. Setup guide: https://minddory.com/connect
 Read tools are annotated `readOnlyHint`; write tools mutate only the user's own
 deck and are additive (`destructiveHint: false`).
 
-Built on spaced repetition with difficulty-based intervals. Free to connect; advanced
-spaced-repetition writes are part of MindDory Premium.
+Built on spaced repetition with difficulty-based intervals. Free to connect, and
+free to build a deck from chat; the two tools that reschedule a card
+(`mark_demonstrated`, `mark_struggled`) are part of MindDory Premium.
 
 ## Troubleshooting
 
 - **No sign-in email / can't authorize.** Connecting sends a one-time magic link to your MindDory account email. Check spam, and use the same email as your MindDory account. Links expire after a short window; reconnect to get a fresh one.
-- **"This tool requires an active MindDory Premium subscription" (HTTP 402).** The write tools (`capture_word`, `capture_grammar_mistake`, `mark_demonstrated`, `mark_struggled`, `log_interaction`) require MindDory Premium. Read tools work on the free tier. Upgrade in the app or at https://app.minddory.com.
+- **"This tool requires an active MindDory Premium subscription" (HTTP 402).** Two tools require MindDory Premium: `mark_demonstrated` and `mark_struggled`, the ones that move a card in the spaced-repetition schedule. Everything else, including `capture_word` and `capture_grammar_mistake`, works on the free tier. Upgrade in the app or at https://app.minddory.com.
 - **Tools don't appear after connecting.** MCP clients cache the tool list; disconnect and reconnect the connector to refresh it.
 - **Captured words aren't in the app.** New words sync to the "Chat Discoveries" folder. Re-open or pull-to-refresh the app, and confirm you're signed into the same account.
 - **Wrong language captured.** Capture is scoped to a language code; if a word lands under the wrong language, tell the assistant the correct language and it will recapture.
