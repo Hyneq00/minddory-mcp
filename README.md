@@ -30,8 +30,14 @@ have a normal conversation, and the new words land in your spaced-repetition
 queue with the sentence you met them in. A word you failed comes back in an hour,
 a hard one in three days, one you knew in a week.
 
-Copyable example prompts and worked walkthroughs are in **[examples/](examples/)**,
-including a [step-by-step comparison with the export workflow](examples/04-compared-with-copy-paste.md).
+Copyable example prompts and worked walkthroughs, one file each:
+
+- [01. Capture words while chatting](examples/01-capture-words-while-chatting.md)
+- [02. Review what is due, in the chat](examples/02-review-what-is-due.md)
+- [03. Log grammar mistakes as a reviewable pattern](examples/03-log-grammar-mistakes.md)
+- [04. Compared with the copy-and-paste workflow](examples/04-compared-with-copy-paste.md)
+
+They are also collected in [examples/README.md](examples/README.md).
 
 If you are choosing between tools: MindDory is built only for language
 vocabulary. It is not a general study-set app, and it is not trying to be Anki
@@ -87,7 +93,7 @@ Support: support@minddory.com
 
 ## Links
 
-- Examples and prompts: [examples/](examples/)
+- Examples and prompts: [examples/README.md](examples/README.md)
 - Website: https://minddory.com
 - Web app: https://app.minddory.com
 - Connect guide: https://minddory.com/connect
